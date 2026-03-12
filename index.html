@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio del Artista | Visionario Digital</title>
+    <meta name="description" content="Explora el universo creativo y obras abstractas profundas. Una inmersión en la estética visual y conceptual.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav aria-label="Navegación principal">
+            <a href="#" class="logo" aria-label="Inicio">VELO.</a>
+            <ul class="nav-links" role="list">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#biography">Visión</a></li>
+                <li><a href="#gallery">Colección</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="bubbles-container" aria-hidden="true" role="presentation">
+        <!-- Bubbles injected via JS -->
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="video-background-wrapper">
+                 <img src="video/ezgif-39e71b26bbf63dc2.webp" alt="" class="video-background" id="hero-bg-anim">
+                 <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="artist-center-wrapper">
+                    <img src="imagenes/artista 1.png" alt="Concepto central del artista" class="artist-main-img">
+                </div>
+                <div class="hero-text">
+                    <span class="badge">Nueva Colección</span>
+                    <h1>Ecos del Subconsciente</h1>
+                    <p>Un recorrido visceral por abstracciones que revelan motivaciones ocultas de la mente.</p>
+                </div>
+            </div>
+            <a href="#biography" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
+        </section>
+
+        <section id="biography" class="bio-section">
+            <div class="container bio-grid">
+                <div class="bio-text">
+                    <h2>Materia y Sensación</h2>
+                    <p>La creatividad gráfica florece cuando permitimos que la oscuridad revele sus texturas. Cada cuadro en esta exhibición expone una pulsión primitiva diferente, traduciendo en código y color aquello que escapa a la lógica verbal.</p>
+                    <p>Mis motivaciones artísticas radican en encontrar el balance entre la fluidez capturada y la geometría rota; crear ventanas a través de las burbujas ilusorias que construimos alrededor nuestro.</p>
+                </div>
+                <div class="bio-images">
+                    <img src="imagenes/artista 2.png" alt="El artista en fase conceptual" class="bio-img img-1" loading="lazy" decoding="async">
+                    <img src="imagenes/artista 3.png" alt="Proceso creativo expresivo" class="bio-img img-2" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="gallery-header">
+                    <h2>Revelaciones Ocultas</h2>
+                    <p>Explora cada pieza. Desciende hacia las motivaciones puras.</p>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Artwork items injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-header">
+                    <h2>Contáctame</h2>
+                    <p>¿Tienes un proyecto en mente o quieres adquirir una de mis obras?</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu visión..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    <div id="form-status" class="form-status sr-only"
+                         data-msg-success="¡Mensaje enviado con éxito! Te responderé pronto."
+                         data-msg-error-fields="Por favor completa todos los campos requeridos."
+                         data-msg-error-email="Por favor ingresa un correo electrónico válido."
+                         data-msg-error-send="Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 VELO. Creado con estándares de élite para experiencias web inmersivas.</p>
+        </div>
+    </footer>
+
+    <div class="orbs-background" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
